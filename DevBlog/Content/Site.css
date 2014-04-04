@@ -42,9 +42,12 @@ input[type="checkbox"].input-validation-error {
     display: none;
 }
 
-.search-wrapper {
+.navbar-header .logo {
     padding-top: 14px;
     padding-bottom: 15px;
+}
+.search-wrapper {
+    padding: 15px 20px;
     line-height: 25px;
 }
 
