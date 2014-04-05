@@ -169,6 +169,10 @@
     <Compile Include="Migrations\201404050612080_ArticleAndCommentModels.Designer.cs">
       <DependentUpon>201404050612080_ArticleAndCommentModels.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201404051637070_ModelAndUserUpdates.cs" />
+    <Compile Include="Migrations\201404051637070_ModelAndUserUpdates.Designer.cs">
+      <DependentUpon>201404051637070_ModelAndUserUpdates.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -239,6 +243,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201404050612080_ArticleAndCommentModels.resx">
       <DependentUpon>201404050612080_ArticleAndCommentModels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201404051637070_ModelAndUserUpdates.resx">
+      <DependentUpon>201404051637070_ModelAndUserUpdates.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
