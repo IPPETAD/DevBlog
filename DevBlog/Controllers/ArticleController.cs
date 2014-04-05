@@ -8,8 +8,7 @@ namespace DevBlog.Controllers
 {
     public class ArticleController : Controller
     {
-        //
-        // GET: /Article/
+        [Route("search")]
         public ActionResult Index()
         {
             return View();
