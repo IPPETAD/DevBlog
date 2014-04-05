@@ -128,8 +128,8 @@ UpgradeLog*.XML
 UpgradeLog*.htm
 
 # SQL Server files
-App_Data/*.mdf
-App_Data/*.ldf
+DevBlog/App_Data/*.mdf
+DevBlog/App_Data/*.ldf
 
 
 #LightSwitch generated files
