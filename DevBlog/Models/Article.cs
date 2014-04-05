@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Collections.Generic;
+using System.Data.Entity;
 
 namespace DevBlog.Models
 {
@@ -16,4 +14,9 @@ namespace DevBlog.Models
 
 		public ICollection<Comment> Comments { get; set; }
 	}
+
+    public class ArticleDBContext : DbContext
+    {
+        public DbSet<Article> Articles { get; set; }
+    }
 }
