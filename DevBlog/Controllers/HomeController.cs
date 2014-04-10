@@ -7,22 +7,27 @@ using System.Web.Mvc;
 
 namespace DevBlog.Controllers
 {
-    public class HomeController : Controller
-    {
-        private ApplicationDbContext db = new ApplicationDbContext();
+	public class HomeController : DbController
+	{
+		public HomeController()
+			: base()
+		{ 
+		}
 
-        [Route("")]
-        public ActionResult Index()
-        {
-            return View(db.Articles.ToList());
-        }
+		public HomeController(ApplicationDbContext context)
+			: base(context)
+		{ 
+		}
 
-        [Route("about")]
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
+		public ActionResult Index()
+		{
+			return View(db.Articles.ToList());
+		}
 
-            return View();
-        }
-    }
+		public ActionResult About()
+		{
+			ViewBag.Message = "Your application description page.";
+			return View();
+		}
+	}
 }

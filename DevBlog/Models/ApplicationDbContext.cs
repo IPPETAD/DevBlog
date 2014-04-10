@@ -12,9 +12,10 @@ namespace DevBlog.Models
 		public ApplicationDbContext()
 			: base("DefaultConnection")
 		{
+			Database.SetInitializer<ApplicationDbContext>(new CreateDatabaseIfNotExists<ApplicationDbContext>());
 		}
 
-		public DbSet<Article> Articles { get; set; }
-		public DbSet<Comment> Comments { get; set; }
+		public virtual DbSet<Article> Articles { get; set; }
+		public virtual DbSet<Comment> Comments { get; set; }
 	}
 }
